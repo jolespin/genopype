@@ -1,5 +1,5 @@
 # ==============
-# goomba
+# genopype
 # ==============
 # Architecture for creating bash pipelines, in particular, for bioinformatics
 # ------------------------------------
