@@ -28,8 +28,9 @@
 
 #### Usage
 
-```
-from genopype import * # or import genopype as gp
+```python
+# import genopype as gp
+from genopype import * 
 
 # Set up a directory dictionary	
 directories = dict()
