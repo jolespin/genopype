@@ -1,0 +1,25 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "bz2file",
+    "numpy >=1.11",
+    "pandas >=0.24.2",
+    "pathlib2",
+    "python",
+    "requests",
+    "scandir",
+    "soothsayer_utils",
+    "tqdm",
+    "tzlocal"
+  ],
+  "license": "BSD-3",
+  "license_family": "BSD",
+  "name": "genopype",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1644969041733,
+  "version": "2021.8.18"
+}

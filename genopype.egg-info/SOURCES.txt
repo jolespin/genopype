@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+genopype/__init__.py
+genopype/genopype.py
+genopype.egg-info/PKG-INFO
+genopype.egg-info/SOURCES.txt
+genopype.egg-info/dependency_links.txt
+genopype.egg-info/requires.txt
+genopype.egg-info/top_level.txt

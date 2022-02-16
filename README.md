@@ -24,7 +24,14 @@
 
 `__license__ = "BSD-3"`
 
-`__version__ = "2020.03"`
+`__version__ = "2021.8.18"`
+
+#### Installation
+
+```
+pip install genopype
+conda install -c jolespin genopype
+```
 
 #### Usage
 

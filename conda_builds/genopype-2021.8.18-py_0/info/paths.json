@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/LICENSE.txt",
+      "path_type": "hardlink",
+      "sha256": "4835358df6e76d51586453418f520747d723aee644877725d65b84dae791765b",
+      "size_in_bytes": 2023
+    },
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "b438e9fe1c1452e8ec2034db2261e0a7e8234a03b019a1d84d6eb981ffd8f197",
+      "size_in_bytes": 363
+    },
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "7cf23981a0e074d71bcce679d9360f3d8db1ed4ae09c411507d309157138d2a7",
+      "size_in_bytes": 957
+    },
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "1b5e87e00dc87a84269cead8578b9e6462928e18a95f1f3373c9eef451a5bcc0",
+      "size_in_bytes": 92
+    },
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "fde4c1391dae99b199eaf095adbf278d2fbea643071f37274a4156c997953d34",
+      "size_in_bytes": 97
+    },
+    {
+      "_path": "site-packages/genopype-2021.8.18.dist-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "7e82aca0d8b0b5658017fdd487c476eefc599851b53c44e4b1ee5275da2d9b70",
+      "size_in_bytes": 9
+    },
+    {
+      "_path": "site-packages/genopype/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "7273b88923b20a7997da6870d5fbeca147e6971d73a0f28ed936d0e175c04916",
+      "size_in_bytes": 2769
+    },
+    {
+      "_path": "site-packages/genopype/genopype.py",
+      "path_type": "hardlink",
+      "sha256": "34de9b89a1f83119675d10737d444eb0bc732acde23884eb18837167151ba34a",
+      "size_in_bytes": 36310
+    }
+  ],
+  "paths_version": 1
+}

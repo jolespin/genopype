@@ -1,0 +1,36 @@
+{% set name = "genopype" %}
+{% set version = "2021.8.18" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+  script: $PYTHON -m pip install --no-deps --ignore-installed .
+
+source:
+  url: https://github.com/jolespin/genopype/releases/download/v{{version}}/genopype-{{version}}.tar.gz
+
+build:
+  noarch: python
+  number: 0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pandas >=0.24.2
+    - tqdm
+    - bz2file
+    - tzlocal
+    - pathlib2
+    - requests
+    - numpy >=1.11
+    - scandir
+    - soothsayer_utils
+
+about:
+  home: https://github.com/jolespin/genopype
+  license: BSD-3
+  license_family: BSD
+  summary: 'Architecture for building creating pipelines'
+  description: 'Architecture for building creating pipelines'
