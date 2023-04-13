@@ -19,7 +19,6 @@ from soothsayer_utils import *
 # Know Bugs:
 # * Currently (2019.07.26), the "completed_message" parameter does not work.
 
-
 # Check filename
 def check_filename(filename, acceptable_characters={".","-","_"}):
     status_ok = True
@@ -388,6 +387,8 @@ class Command(object):
         n_linebreaks=1,
         acceptable_returncodes=[0],
         popen_kws=dict(),
+        executable="/bin/bash",
+
         ):
         """
         Should future versions should have separate prologue and epilogue for f_cmds and f_verbose?
@@ -450,7 +451,7 @@ class Command(object):
                 write_stderr = format_path(write_stderr)
                 f_stderr = open(write_stderr, "wb")
             # Execute the process
-            self.process_ = subprocess.Popen(self.cmd, shell=True, stdout=f_stdout, stderr=f_stderr, **popen_kws) #! Future: Use file objects instead here so it can be written in real time
+            self.process_ = subprocess.Popen(self.cmd, shell=True, stdout=f_stdout, stderr=f_stderr, executable=executable, **popen_kws) #! Future: Use file objects instead here so it can be written in real time
             # Wait until process is complete and return stdout/stderr
             self.stdout_, self.stderr_ = self.process_.communicate() # Use this .communicate instead of .wait to avoid zombie process that hangs due to defunct. Removed timeout b/c it's not available in Python 2
 
@@ -695,8 +696,11 @@ class ExecutablePipeline(object):
             restart_from_checkpoint = int(restart_from_checkpoint)
             assert restart_from_checkpoint in steps, "Cannot restart from checkpoint `{}` because it does not exist".format(restart_from_checkpoint)
             if self.checkpoint_directory is not None:
-                if restart_from_checkpoint == "preprocessing":
-                    restart_from_checkpoint = 1
+                # Need to test
+                # ------------
+                if restart_from_checkpoint < 0: 
+                    restart_from_checkpoint = sorted(steps)[restart_from_checkpoint]
+                # -------------
 
                 target_checkpoint = restart_from_checkpoint
                 print("Restarting pipeline from checkpoint:", target_checkpoint, file=self.f_verbose)

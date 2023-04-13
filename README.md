@@ -24,7 +24,7 @@
 
 `__license__ = "BSD-3"`
 
-`__version__ = "2021.8.18"`
+`__version__ = "2023.4.13"`
 
 #### Installation
 

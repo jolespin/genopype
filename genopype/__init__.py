@@ -33,7 +33,7 @@
 # =======
 # Version
 # =======
-__version__= "2021.8.18"
+__version__= "2023.4.13b"
 __author__ = "Josh L. Espinoza"
 __email__ = "jespinoz@jcvi.org, jol.espinoz@gmail.com"
 __url__ = "https://github.com/jolespin/genopype"
