@@ -1,13 +1,10 @@
 Metadata-Version: 2.1
 Name: genopype
-Version: 2021.8.18
+Version: 2023.4.13
 Summary: Architecture for building creating pipelines
 Home-page: https://github.com/jolespin/genopype
 Author: Josh L. Espinoza
 Author-email: jespinoz@jcvi.org
 License: BSD-3
-Platform: UNKNOWN
+License-File: LICENSE
 License-File: LICENSE.txt
-
-UNKNOWN
-
