@@ -1,16 +1,16 @@
 {% set name = "genopype" %}
-{% set version = "2021.8.18" %}
+{% set version = "2023.5.15" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
-  script: $PYTHON -m pip install --no-deps --ignore-installed .
 
 source:
   url: https://github.com/jolespin/genopype/releases/download/v{{version}}/genopype-{{version}}.tar.gz
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed .
   number: 0
 
 requirements:

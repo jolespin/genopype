@@ -75,13 +75,13 @@ def validate_file_existence(paths, prologue="Validating the following files:", m
         # Get the absolute path
         # path = os.path.realpath(path)
         # Get the path to the symlink target
-        if os.path.islink(path):
-            path = os.readlink(path)
+        # if os.path.islink(path):
+        #     path = os.readlink(path)
         assert os.path.exists(path), "The following path does not exist: {}".format(path)
         # original_path = None
         # symlink = None
-        if os.path.islink(path):
-            path = os.readlink(path)
+        # if os.path.islink(path):
+        #     path = os.readlink(path)
         if not os.path.isdir(path):
             size_bytes = os.path.getsize(path)
 
